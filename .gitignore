@@ -1,24 +1,38 @@
-# 데이터 (용량이 크고 재배포 제한이 있을 수 있으므로 기본 제외)
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-
-# 모델/제출물
-outputs/models/*
-!outputs/models/.gitkeep
-outputs/submissions/*
-!outputs/submissions/.gitkeep
-
+# ==========================
 # Python
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
+# ==========================
 .venv/
-venv/
-*.egg-info/
+__pycache__/
+*.py[cod]
 
-# OS/IDE
+# ==========================
+# Jupyter
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# VSCode
+# ==========================
+.vscode/
+
+# ==========================
+# Environment
+# ==========================
+.env
+
+# ==========================
+# Outputs
+# ==========================
+outputs/
+*.log
+
+# ==========================
+# Competition Raw Data
+# ==========================
+data/raw/
+
+# ==========================
+# OS
+# ==========================
 .DS_Store
-.vscode/*
-!.vscode/settings.json
+Thumbs.db
